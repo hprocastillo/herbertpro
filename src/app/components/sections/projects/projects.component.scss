@@ -1,0 +1,22 @@
+.card {
+  border-radius: 10px;
+}
+
+.img-project {
+  width: 48px;
+}
+
+
+/* Desktop 720p */
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+  .img-gallery {
+    width: 700px;
+  }
+}
+
+/* Desktop 1080p */
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+  .img-gallery {
+    width: 900px;
+  }
+}

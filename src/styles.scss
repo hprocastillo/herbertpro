@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+/* BODY */
+html, body {
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.prompt {
+  margin: 0 0 0 3px;
+  border-radius: 10px;
+  padding: 2px 5px 2px 5px;
+  background-color: #333;
+  color: #01f801;
+}
+
+/* BUTTONS */
+.btn > svg {
+  margin: -3px 5px 0 0;
+}
+
+
+/* LIST */
+li {
+  font-size: 14px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li > svg {
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 1px solid #ccc;
+}
+
+/* COLUMNS */
+.left-column, .main-column {
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+}
+
+/* MEDIA QUERIES */
+/* MOBILE */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .desktop {
+    display: none;
+  }
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 700px) and (orientation: landscape) {
+  .mobile {
+    display: none;
+  }
+}
