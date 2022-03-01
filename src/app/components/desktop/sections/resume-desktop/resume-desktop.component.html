@@ -1,0 +1,28 @@
+<div id="resume-desktop" class="custom-border bg-white p-4 mb-4">
+  <h3>Resum<span class="prompt">e</span></h3>
+  <h5 class="fw-bold">Experience</h5>
+
+  <div *ngFor="let exp of listExperiences" class="card mt-4 mb-4">
+    <div class="card-body p-3">
+
+      <div class="row">
+        <div class="col-1">
+          <img [src]="[exp.logoCompany]" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 p-0">
+          <p class="fw-bold">{{exp.nameCompany}} - <span class="text-muted">{{exp.charge}}</span></p>
+        </div>
+        <div class="col-5 d-flex justify-content-end">
+          <p class="small">{{exp.location}} &bull; {{exp.duration}}</p>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-12">
+          <p>{{exp.description}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

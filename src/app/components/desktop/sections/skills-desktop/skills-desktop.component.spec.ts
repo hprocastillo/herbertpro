@@ -1,0 +1,25 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { SkillsDesktopComponent } from './skills-desktop.component';
+
+describe('SkillsDesktopComponent', () => {
+  let component: SkillsDesktopComponent;
+  let fixture: ComponentFixture<SkillsDesktopComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ SkillsDesktopComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(SkillsDesktopComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

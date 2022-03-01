@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "herbertpro-4d6b7": {
+      "hosting": {
+        "herbertpro": [
+          "herbertpro-4d6b7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "herbertpro-4d6b7"
+  }
+}

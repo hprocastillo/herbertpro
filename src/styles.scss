@@ -1,16 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
 
 /* BODY */
 html, body {
   background-color: #333;
   font-family: 'Roboto', sans-serif;
 }
-
 .prompt {
   margin: 0 0 0 3px;
   border-radius: 10px;
@@ -24,6 +19,17 @@ html, body {
   margin: -3px 5px 0 0;
 }
 
+/* LINK */
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+a > svg {
+  margin-top: -5px;
+  margin-right: 5px;
+}
 
 /* LIST */
 li {
@@ -44,24 +50,29 @@ li > svg {
   border-bottom: 1px solid #ccc;
 }
 
-/* COLUMNS */
-.left-column, .main-column {
-  border-radius: 0.5em;
-  border: 1px solid #ccc;
+/* CARD - BORDER */
+.rounded-corner {
+  border-radius: 15px;
+  border: 1px solid lightgray;
 }
 
 /* MEDIA QUERIES */
 /* MOBILE */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-  .desktop {
+  #desktop-layout {
     display: none;
   }
 }
 
-
 /* DESKTOP */
 @media only screen and (min-width: 700px) and (orientation: landscape) {
-  .mobile {
+  #mobile-layout {
     display: none;
+  }
+  #left-column-desktop {
+    top: 75px;
+  }
+  #content-desktop {
+    padding-top: 75px;
   }
 }
