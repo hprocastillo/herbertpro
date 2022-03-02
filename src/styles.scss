@@ -69,10 +69,7 @@ html, body {
   border-radius: 15px;
 }
 
-/* PROFILE - AVATAR */
-.img-profile {
-  border-radius: 50%;
-}
+
 
 /* SKILLS LIST */
 .list-skills {
@@ -99,12 +96,17 @@ html, body {
   }
   /* NAVBAR LIST */
   .navbar-item{
-    color:#333;
+    color:gray;
+  }
+  /* PROFILE - AVATAR */
+  .img-profile-mobile {
+    border-radius: 50%;
+    width: 60%;
   }
 }
 
 /* DESKTOP 720p */
-@media only screen and (min-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-width: 650px) and (orientation: landscape) {
   #mobile-layout {
     display: none;
   }
@@ -120,6 +122,10 @@ html, body {
   }
   .card-contact {
     min-height: 480px;
+  }
+  /* PROFILE - AVATAR */
+  .img-profile-desktop {
+    border-radius: 50%;
   }
 }
 
@@ -140,5 +146,9 @@ html, body {
   }
   .card-contact {
     min-height: 480px;
+  }
+  /* PROFILE - AVATAR */
+  .img-profile-desktop {
+    border-radius: 50%;
   }
 }
