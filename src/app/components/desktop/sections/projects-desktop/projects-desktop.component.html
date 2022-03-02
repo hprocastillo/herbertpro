@@ -1,7 +1,7 @@
-<div id="projects-desktop" class="custom-border bg-white p-4 mb-4">
+<div id="projects-desktop" class="rounded-corner bg-white p-4 mb-4">
   <h3>Project<span class="prompt">s</span></h3>
 
-  <div *ngFor="let pj of listProjects" class="card mt-4 mb-4">
+  <div class="card card-rounded mt-4 mb-4" *ngFor="let pj of listProjects">
     <div class="card-body p-3">
 
       <!-- BRAND LOGO, TITLE -->
@@ -25,7 +25,7 @@
       <!-- GALLERY -->
       <div class="row">
         <div class="col-12">
-          <div class="card shadow-lg p-3 bg-body custom-border">
+          <div class="card shadow-lg p-3 rounded-corner">
             <div class="card-body p-0">
               <h6 class="fw-bold">Screenshots</h6>
 
@@ -33,57 +33,43 @@
               <ngb-carousel>
                 <ng-container *ngIf="pj.gallery1">
                   <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="[pj.gallery1]" alt="Random 1 slide" class="img-fluid">
-                    </div>
+                    <img [src]="[pj.gallery1]" alt="Random 1 slide" class="img-fluid">
                   </ng-template>
                 </ng-container>
 
                 <ng-container *ngIf="pj.gallery2">
                   <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="[pj.gallery2]" alt="Random 2 slide" class="img-fluid">
-                    </div>
+                    <img [src]="[pj.gallery2]" alt="Random 2 slide" class="img-fluid">
                   </ng-template>
                 </ng-container>
 
                 <ng-container *ngIf="pj.gallery3">
                   <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="[pj.gallery3]" alt="Random 3 slide" class="img-fluid">
-                    </div>
+                    <img [src]="[pj.gallery3]" alt="Random 3 slide" class="img-fluid">
                   </ng-template>
                 </ng-container>
 
                 <ng-container *ngIf="pj.gallery4">
                   <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="[pj.gallery4]" alt="Random 4 slide" class="img-fluid">
-                    </div>
+                    <img [src]="[pj.gallery4]" alt="Random 4 slide" class="img-fluid">
                   </ng-template>
                 </ng-container>
 
                 <ng-container *ngIf="pj.gallery5">
                   <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="[pj.gallery5]" alt="Random 5 slide" class="img-fluid">
-                    </div>
+                    <img [src]="[pj.gallery5]" alt="Random 5 slide" class="img-fluid">
                   </ng-template>
                 </ng-container>
 
                 <ng-container *ngIf="pj.gallery6">
                   <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="[pj.gallery6]" alt="Random 6 slide" class="img-fluid">
-                    </div>
+                    <img [src]="[pj.gallery6]" alt="Random 6 slide" class="img-fluid">
                   </ng-template>
                 </ng-container>
 
                 <ng-container *ngIf="pj.gallery7">
                   <ng-template ngbSlide>
-                    <div class="picsum-img-wrapper">
-                      <img [src]="[pj.gallery7]" alt="Random 7 slide" class="img-fluid">
-                    </div>
+                    <img [src]="[pj.gallery7]" alt="Random 7 slide" class="img-fluid">
                   </ng-template>
                 </ng-container>
               </ngb-carousel>

@@ -1,16 +1,15 @@
-<div id="contact-desktop" class="custom-border bg-white p-4 mb-4">
+<div id="contact-desktop" class="rounded-corner bg-white p-4 mb-4">
   <h3>Get in Touc<span class="prompt">h</span></h3>
   <br>
 
   <div class="row">
-
     <div class="col-6">
-      <div class="card">
+      <div class="card card-rounded card-contact">
         <div class="card-body p-3">
           <h6 class="text-center fw-bold mb-3">Contact Info</h6>
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-0">
+          <ul class="list-group list-group-flush contact-list">
+            <li class="list-group-item border-0 contact-item">
               <svg class="bi bi-envelope-fill" fill="currentColor" height="16" viewBox="0 0 16 16"
                    width="16" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -18,7 +17,7 @@
               </svg>
               hprocastillo@gmail.com
             </li>
-            <li class="list-group-item border-0">
+            <li class="list-group-item border-0 contact-item">
               <svg class="bi bi-github" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
                    xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -26,7 +25,7 @@
               </svg>
               Github: <a href="https://github.com/hprocastillo" target="_blank">hprocastillo</a>
             </li>
-            <li class="list-group-item border-0">
+            <li class="list-group-item border-0 contact-item">
               <svg class="bi bi-linkedin" fill="currentColor" height="16" viewBox="0 0 16 16"
                    width="16"
                    xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +34,7 @@
               </svg>
               LinkedIn: <a href="https://www.linkedin.com/in/hprocastillo/" target="_blank">hprocastillo</a>
             </li>
-            <li class="list-group-item border-0">
+            <li class="list-group-item border-0 contact-item">
               <svg class="bi bi-instagram" fill="currentColor" height="16" viewBox="0 0 16 16"
                    width="16"
                    xmlns="http://www.w3.org/2000/svg">
@@ -51,33 +50,39 @@
 
 
     <div class="col-6">
-      <div class="card">
+      <div class="card card-rounded card-contact">
         <div class="card-body p-3">
           <h6 class="text-center fw-bold mb-3">Send me a message</h6>
 
           <form (ngSubmit)="saveMessage()" [formGroup]="newForm">
 
-            <div class="form-row mb-3">
-              <input class="form-control p-3" formControlName="name" placeholder="Your Name" type="text">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="txtName" placeholder="Your Name" formControlName="name">
+              <label for="txtName">Your Name</label>
             </div>
 
-            <div class="form-row mb-3">
-              <input class="form-control p-3" formControlName="email" placeholder="Your Email" type="email">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="txtEmail" placeholder="Your Email" formControlName="email">
+              <label for="txtEmail">Your Email</label>
             </div>
 
-            <div class="form-row mb-3">
-              <input class="form-control p-3" formControlName="subject" placeholder="Subject" type="text">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="txtSubject" placeholder="Subject" formControlName="subject">
+              <label for="txtSubject">Subject</label>
             </div>
 
-            <div class="form-row mb-3">
-              <textarea class="form-control p-3" formControlName="message" placeholder="Your Message"></textarea>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" style="height: 100px" id="txtMessage" placeholder="Your Message"
+                        formControlName="message"></textarea>
+              <label for="txtMessage">Your Message</label>
             </div>
+
             <!-- Success alert -->
             <ng-container *ngIf="successMessage">
               <ngb-alert (closed)="closeAlert()" type="success">Your message has been sent</ngb-alert>
             </ng-container>
 
-            <button class="btn btn-dark btn-send p-3" type="submit">
+            <button class="btn btn-dark p-3 w-100" type="submit">
               Send
             </button>
 

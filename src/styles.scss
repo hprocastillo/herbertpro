@@ -6,6 +6,7 @@ html, body {
   background-color: #333;
   font-family: 'Roboto', sans-serif;
 }
+
 .prompt {
   margin: 0 0 0 3px;
   border-radius: 10px;
@@ -14,33 +15,46 @@ html, body {
   color: #01f801;
 }
 
+.rounded-corner {
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
 /* BUTTONS */
 .btn > svg {
   margin: -3px 5px 0 0;
 }
 
-/* LINK */
-a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
+/* CONTACT - LIST */
+.contact-list {
+
 }
 
-a > svg {
+.contact-item > svg {
   margin-top: -5px;
   margin-right: 5px;
 }
 
-/* LIST */
-li {
+/* SIDEBAR - LIST */
+.sidebar-item {
   font-size: 14px;
 }
 
-li:hover {
+.sidebar-item:hover {
   cursor: pointer;
 }
 
-li > svg {
+.sidebar-item > svg {
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+.sidebar-item > a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-item > a > svg {
   margin-top: -5px;
   margin-right: 5px;
 }
@@ -51,9 +65,27 @@ li > svg {
 }
 
 /* CARD - BORDER */
-.rounded-corner {
+.card-rounded {
   border-radius: 15px;
-  border: 1px solid lightgray;
+}
+
+/* PROFILE - AVATAR */
+.img-profile {
+  border-radius: 50%;
+}
+
+/* SKILLS LIST */
+.list-skills {
+  display: inline-block;
+  width: 50%;
+}
+
+.item-skills {
+  font-size: 16px;
+}
+
+.item-skills::marker {
+  font-size: 25px;
 }
 
 /* MEDIA QUERIES */
@@ -62,17 +94,51 @@ li > svg {
   #desktop-layout {
     display: none;
   }
+  #content-mobile {
+    padding-top: 70px;
+  }
+  /* NAVBAR LIST */
+  .navbar-item{
+    color:#333;
+  }
 }
 
-/* DESKTOP */
-@media only screen and (min-width: 700px) and (orientation: landscape) {
+/* DESKTOP 720p */
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
   #mobile-layout {
     display: none;
   }
   #left-column-desktop {
     top: 75px;
+    height: 600px;
   }
   #content-desktop {
     padding-top: 75px;
+  }
+  .card-skills {
+    height: 240px;
+  }
+  .card-contact {
+    min-height: 480px;
+  }
+}
+
+/* DESKTOP 1080p */
+@media only screen and (min-width: 1900px) and (orientation: landscape) {
+  #mobile-layout {
+    display: none;
+  }
+  #left-column-desktop {
+    top: 75px;
+    height: 850px;
+  }
+  #content-desktop {
+    padding-top: 75px;
+  }
+  .card-skills {
+    height: 240px;
+  }
+  .card-contact {
+    min-height: 480px;
   }
 }
