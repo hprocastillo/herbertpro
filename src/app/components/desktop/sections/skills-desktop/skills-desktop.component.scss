@@ -1,0 +1,30 @@
+/* LANDSCAPE 600 - 1200 */
+@media only screen and (min-device-width: 600px) and (max-device-width: 1190px) and (orientation: landscape) {
+  .card {
+    height: 170px;
+    margin-bottom: 20px;
+  }
+  li::marker {
+    font-size: 24px;
+  }
+}
+
+/* LANDSCAPE 1200 - 1900 */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1890px) and (orientation: landscape) {
+  .card {
+    height: 170px;
+  }
+  li::marker {
+    font-size: 24px;
+  }
+}
+
+/* LANDSCAPE 1900 - oo */
+@media only screen and (min-device-width: 1900px) and (orientation: landscape) {
+  .card{
+    height: 220px;
+  }
+  li::marker {
+    font-size: 32px;
+  }
+}

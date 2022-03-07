@@ -20,182 +20,63 @@ html, body {
   border: 1px solid lightgray;
 }
 
-/* BUTTONS */
-.btn > svg {
-  margin: -3px 5px 0 0;
-}
-
-/* CONTACT - LIST */
-.contact-list {
-
-}
-
-.contact-item > svg {
-  margin-top: -5px;
-  margin-right: 5px;
-}
-
-/* SIDEBAR - LIST */
-.sidebar-item {
-  font-size: 14px;
-}
-
-.sidebar-item:hover {
-  cursor: pointer;
-}
-
-.sidebar-item > svg {
-  margin-top: -5px;
-  margin-right: 5px;
-}
-
-.sidebar-item > a {
-  text-decoration: none;
-  color: black;
-}
-
-.sidebar-item > a > svg {
-  margin-top: -5px;
-  margin-right: 5px;
-}
-
-/* NAVBAR */
-.navbar {
-  border-bottom: 1px solid #ccc;
-}
-
-/* CARD - BORDER */
 .card-rounded {
   border-radius: 15px;
 }
 
-
 /* MEDIA QUERIES */
-/* MOBILE - PORTRAIT */
+/* PORTRAIT */
 @media only screen and (min-device-width: 320px) and (max-device-width: 600px) and (orientation: portrait) {
   html, body {
-    font-size: 12px;
+    font-size: 14px;
   }
   #desktop-layout {
     display: none;
   }
-  #content-mobile {
-    padding-top: 70px;
-  }
-  /* NAVBAR LIST */
-  .navbar-item {
-    color: gray;
-  }
-  /* PROFILE - AVATAR */
-  .img-profile-mobile {
-    border-radius: 50%;
-    width: 60%;
-  }
 }
 
-/* LANDSCAPE 1000 x 600 */
-@media only screen and (min-device-width: 600px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  html, body {
-    font-size: 13px;
-  }
-  #mobile-layout {
-    display: none;
-  }
-  #left-column-desktop {
-    top: 75px;
-    height: 600px;
-  }
-  #content-desktop {
-    padding-top: 75px;
-  }
-
-  .card-contact {
-    min-height: 420px;
-  }
-  /* PROFILE - AVATAR */
-  .img-profile-desktop {
-    border-radius: 50%;
-    width: 60%;
-  }
-
-  /* SKILLS */
-  .card-skills {
-    height: 200px;
-  }
-  .list-skills {
-    display: inline-block;
-    width: 50%;
-    padding-left: 14px;
-  }
-
-  .item-skills {
-    padding: 0;
-    font-size: 13px;
-  }
-
-  .item-skills::marker {
-    font-size: 18px;
-  }
-  .img-skills {
-    width: 24px;
-  }
-
-  /* CONTACT  */
-  .contact-list {
-
-  }
-
-  .contact-item > svg {
-    margin-top: -5px;
-    margin-right: 5px;
-  }
-}
-
-/* LANDSCAPE 1280 x 720 */
-@media only screen and (min-device-width: 1000px) and(max-device-width: 1900px) and (orientation: landscape) {
+/* LANDSCAPE 600 - 1200 */
+@media only screen and (min-device-width: 600px) and (max-device-width: 1190px) and (orientation: landscape) {
   html, body {
     font-size: 14px;
   }
+
   #mobile-layout {
     display: none;
   }
+
   #left-column-desktop {
-    top: 75px;
+    top: 65px;
     height: 600px;
   }
+
   #content-desktop {
-    padding-top: 75px;
-  }
-
-  .card-contact {
-    min-height: 480px;
-  }
-  /* PROFILE - AVATAR */
-  .img-profile-desktop {
-    border-radius: 50%;
-  }
-
-
-  /* SKILLS */
-  .card-skills {
-    height: 240px;
-  }
-  .list-skills {
-    display: inline-block;
-    width: 50%;
-  }
-
-  .item-skills {
-    font-size: 16px;
-  }
-
-  .item-skills::marker {
-    font-size: 25px;
+    padding-top: 65px;
   }
 }
 
-/* LANDSCAPE 1920 x 1080 */
-@media only screen and (min-width: 1900px) and (orientation: landscape) {
+/* LANDSCAPE 1200 - 1900 */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1890px) and (orientation: landscape) {
+  html, body {
+    font-size: 14px;
+  }
+
+  #mobile-layout {
+    display: none;
+  }
+
+  #left-column-desktop {
+    top: 65px;
+    height: 600px;
+  }
+
+  #content-desktop {
+    padding-top: 65px;
+  }
+}
+
+/* LANDSCAPE 1900 - oo  */
+@media only screen and (min-device-width: 1900px) and (orientation: landscape) {
   html, body {
     font-size: 16px;
   }
@@ -204,34 +85,9 @@ html, body {
   }
   #left-column-desktop {
     top: 75px;
-    height: 850px;
+    height: 800px;
   }
   #content-desktop {
     padding-top: 75px;
-  }
-
-  .card-contact {
-    min-height: 480px;
-  }
-  /* PROFILE - AVATAR */
-  .img-profile-desktop {
-    border-radius: 50%;
-  }
-
-  /* SKILLS */
-  .card-skills {
-    height: 240px;
-  }
-  .list-skills {
-    display: inline-block;
-    width: 50%;
-  }
-
-  .item-skills {
-    font-size: 16px;
-  }
-
-  .item-skills::marker {
-    font-size: 25px;
   }
 }
