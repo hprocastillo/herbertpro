@@ -6,3 +6,24 @@ li > a {
   text-decoration: none;
   color: black;
 }
+
+/* LANDSCAPE 600 - 1200 */
+@media only screen and (min-device-width: 600px) and (max-device-width: 1190px) and (orientation: landscape) {
+  .sidebar {
+    padding: 10px;
+  }
+}
+
+/* LANDSCAPE 1200 - 1900 */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1890px) and (orientation: landscape) {
+  .sidebar {
+    padding: 20px;
+  }
+}
+
+/* LANDSCAPE 1900 - oo */
+@media only screen and (min-device-width: 1900px) and (orientation: landscape) {
+  .sidebar {
+    padding: 20px;
+  }
+}
